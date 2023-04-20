@@ -1,0 +1,44 @@
+.mn{
+    padding: 15px;
+    display: flex;
+}
+.sidebar{
+    width: 20vw;
+    height: 95vh;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    border-radius: 30px;
+
+}
+h2{
+    font-style: Monsterrat;
+    font-size: 50px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+ul > li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.listele{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 80px;
+    padding: 9px;
+}
+img{
+    width: 12px;
+    height: 12px;
+    padding-right: 7px;
+
+    
+}
+.firstsec{
+    padding-bottom: 55%;
+}

@@ -1,0 +1,39 @@
+.meeting-schedule {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  
+  .meeting {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  .vl {
+    border-left: 6px solid rgb(155, 221, 124);
+    height: 60px;
+  }
+
+  .set{
+    display: flex;
+    justify-content: baseline;
+  }
