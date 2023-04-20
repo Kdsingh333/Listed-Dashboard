@@ -15,7 +15,7 @@ function App() {
   return (
     <div className='nav'>
       <SideMenu></SideMenu>
-      <div >
+      <div className='mk'>
       <Header ></Header>
       <Card></Card>
        <section className='navcom'>

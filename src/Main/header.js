@@ -6,7 +6,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button  onClick={() => loginWithRedirect()}>Log In</button>;
+  return <button onClick={() => loginWithRedirect()}>Log In</button>;
 };
 
 const LogoutButton = () => {
@@ -21,20 +21,20 @@ const LogoutButton = () => {
 
 
 function Header() {
-  const { user,isAuthenticated } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
   return (
     <div className='nav'>
-      <p >{isAuthenticated?<p class='nav-head'>{user.name} Dashboard</p>:<p class='nav-head'>Dashboard</p>}</p>
-      <section >
-      <input
-        type="text"
-        placeholder="Search here"
-      />
-       {isAuthenticated ? <LogoutButton /> : <LoginButton />}
-      <BellFilled style={{ fontSize: 24 }} />
+      <p className='nav-head'>{isAuthenticated ? `${user.name} Dashboard` : 'Dashboard'}</p>
+      <section>
+        <input
+          type="text"
+          placeholder="Search here"
+        />
+        {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+        <BellFilled />
       </section>
     </div>
   )
 }
 
-export default Header
+export default Header;
