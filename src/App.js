@@ -20,7 +20,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    toast.success('Click on Login button to loged In');
+    toast.success('You can login now to get Started');
   }, []);
   return (
     <div className='nav'>
