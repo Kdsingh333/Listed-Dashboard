@@ -3,9 +3,10 @@
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 10px;
+    margin-left: 30px;
     margin: 7px;
-    width: 150px;
-    height: 80px;
+    width: 120px;
+    height: 60px;
   }
   
   .card-header {
@@ -19,7 +20,7 @@
   
   .card-body h6 {
     margin: 0;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 300;
   }
   

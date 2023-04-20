@@ -33,27 +33,29 @@ import {
         display: true,
         text: 'company demo data',
         position:'top',
-        align:"start"
+        align:"start",
+        fontsize:"20px"
         
       },
     },
   };
   
-  const labels = ['week1', 'week2', 'week3', 'week4'];
+  const labels = ['week1', 'week2', 'week3', 'week4',"week5","week6"];
   
   export const data = {
     labels,
     datasets: [
       {
         label: 'Guest',
-        data:[300,200,400,500],
+        data:[3,5,2,1,6,7],
         borderColor: 'rgba(155, 221, 124, 1)',
         backgroundColor: 'rgba(155, 221, 124, 1)',
-        tension:0.4
+        tension:0.4,
+        dateRange: [3,6]
       },
       {
         label: 'User',
-        data: [500,300,700,100],
+        data: [4,3,2,5,7,4],
         borderColor: 'rgba(233, 160, 160, 1)',
         backgroundColor: 'rgba(233, 160, 160, 1)',
         tension:0.4
@@ -65,7 +67,7 @@ function Chart() {
    
     return (
         <div className='chart'>
-            <Line
+            <Line 
                 data={data}
                 options={options}></Line>
         </div>
